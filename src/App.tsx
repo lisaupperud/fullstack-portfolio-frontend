@@ -1,20 +1,13 @@
-import { useEffect, useRef } from "react"
 import "./App.css"
-import { fetchProjects } from "../src/project/projectService"
+import ProjectList from "./components/ProjectList"
 
 function App() {
-  const fetchedRef = useRef(false)
-
-  useEffect(() => {
-    if (fetchedRef.current) return
-    fetchedRef.current = true
-
-    fetchProjects()
-      .then((projects) => console.log("Projects:", projects))
-      .catch((error) => console.error("Error fetching projects:", error))
-  }, [])
-
-  return <h1>Portfolio UI</h1>
+  return (
+    <div>
+      <h1>My Projects</h1>
+      <ProjectList />
+    </div>
+  )
 }
 
 export default App
