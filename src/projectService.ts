@@ -1,4 +1,4 @@
-import { apiRequest } from "./apiClient"
+import { apiRequest } from "./api/apiClient"
 
 // interface for project data
 export interface Project {
