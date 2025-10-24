@@ -1,5 +1,5 @@
 import { apiRequest } from "./apiClient"
-import type { Project } from "../Project"
+import type { Project } from "../project/Project"
 
 /*
     uses apiRequest to make a GET request to the backend /projects endpoint

@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react"
 import "./App.css"
-import { fetchProjects } from "./projectService"
+import { fetchProjects } from "../src/project/projectService"
 
 function App() {
   const fetchedRef = useRef(false)
