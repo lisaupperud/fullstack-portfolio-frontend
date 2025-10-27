@@ -1,6 +1,46 @@
-:root {
-  width: 100vw;
-  height: auto;
+/* Global reset / base box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* Make root span full viewport so children can use 100vh reliably */
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+/* Base body styles */
+body {
+  background: #ffffff;
+  color: #111111;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.4;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Helpful defaults for images and media */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional CSS variables for theming */
+:root {
+  --page-max-width: 1200px;
+  --gutter: 16px;
 }

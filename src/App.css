@@ -1,5 +1,30 @@
+/* App container that fills the viewport and provides a neutral canvas */
 .app {
   width: 100%;
-  height: auto;
-  text-align: center;
+  min-height: 100vh; /* ensures full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; /* use when you set background-image on .app or child sections */
+}
+
+/* Ensure direct children span width for layout consistency */
+.app > * {
+  width: 100%;
+}
+
+/* A helper full-screen section class for components that need to cover the viewport */
+.fullscreen {
+  min-height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
