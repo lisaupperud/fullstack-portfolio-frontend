@@ -1,5 +1,4 @@
 import lisaupperud from "../assets/lisaupperud.jpeg"
-import codeIcon from "../assets/codeIcon.png"
 import "./Home.css"
 
 export default function Home() {
