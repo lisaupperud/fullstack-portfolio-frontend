@@ -1,0 +1,36 @@
+.home-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/home-page.png);
+  background-repeat: no-repeat; /* förhindra att bilden upprepas */
+  background-size: cover; /* skala så den täcker hela ytan */
+  background-position: center;
+  display: flex;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  gap: 100px;
+  margin-left: 90px;
+  margin-bottom: 180px;
+}
+
+.introduction img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.introduction-text {
+  color: white;
+  line-height: 1.5;
+  max-width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
