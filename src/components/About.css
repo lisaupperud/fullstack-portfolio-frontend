@@ -1,0 +1,15 @@
+.about-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/about-page-resize.png);
+  background-repeat: no-repeat; /* förhindra att bilden upprepas */
+  background-size: cover; /* skala så den täcker hela ytan */
+  background-position: center;
+  padding: 0;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-right: 100px; /* move visual padding to content, not background area */
+}
