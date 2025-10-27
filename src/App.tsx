@@ -4,7 +4,7 @@ import ProjectList from "./components/ProjectList"
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <Home />
       <h1>My Projects</h1>
       <ProjectList />
