@@ -6,6 +6,8 @@
   background-size: cover; /* skala så den täcker hela ytan */
   background-position: center;
   display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .introduction {
@@ -16,7 +18,6 @@
   width: 50%;
   gap: 100px;
   margin-left: 90px;
-  margin-bottom: 180px;
 }
 
 .introduction img {
