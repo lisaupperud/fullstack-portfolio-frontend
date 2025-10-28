@@ -7,10 +7,8 @@ export default function Home() {
 
     <div className="home-container">
 
-      
       <Navbar />
 
-    
       <div className="introduction">
         <img src={lisaupperud} alt="Lisa Upperud smiling to the camera" />
         <div className="introduction-text">
