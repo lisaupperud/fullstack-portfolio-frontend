@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react"
 import { type Project, fetchProjects } from "../project/projectService"
+import "./Project.css"
 
 /* Component to display a list of projects
     fetches data from backend with the fetchProjects() function
     saves the reuslt in a state variable and displays it
     renders simple list of cards with project name, description, tags and link
-*/ 
-
+*/
 
 export default function ProjectList() {
   const [projects, setProjects] = useState<Project[]>([])
@@ -24,7 +24,8 @@ export default function ProjectList() {
   }
 
   return (
-    <div>
+    <div className="project-container">
+      <h1>My Projects</h1>
       {projects.map((project) => (
         <div key={project.id}>
           <h2>{project.name}</h2>

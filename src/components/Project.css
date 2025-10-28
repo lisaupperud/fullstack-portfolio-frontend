@@ -1,0 +1,9 @@
+.project-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/projects-page.png");
+  background-repeat: no-repeat; /* förhindra att bilden upprepas */
+  background-size: cover; /* skala så den täcker hela ytan */
+  background-position: center;
+  padding: 0;
+}

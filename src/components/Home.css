@@ -4,6 +4,7 @@
   background-image: url(../assets/home-page-2.png);
   background-repeat: no-repeat; /* förhindra att bilden upprepas */
   background-size: cover; /* skala så den täcker hela ytan */
+  padding: 0;
   background-position: center;
   display: flex;
   flex-direction: column;
