@@ -18,11 +18,11 @@
   font-weight: bold;
   margin: 0 30px;
   text-decoration: none;
-  color: #d57a7c;
+  color: #ff8b59;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .links a:hover {
   transform: scale(1.2);
-  color: #ff8b59;
+  color: white;
 }
