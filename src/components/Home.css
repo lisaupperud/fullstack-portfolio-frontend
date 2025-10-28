@@ -14,7 +14,7 @@
   justify-content: center;
   width: 50%;
   gap: 50px;
-  margin-left: 220px;
+  margin-left: 240px;
 }
 
 .introduction img {
@@ -31,4 +31,5 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
