@@ -25,17 +25,19 @@ export default function ProjectList() {
 
   return (
     <div className="project-container">
-      <h1>My Projects</h1>
-      {projects.map((project) => (
-        <div key={project.id}>
-          <h2>{project.name}</h2>
-          <p>{project.description}</p>
-          <p>{project.tags.join(", ")}</p>
-          <a href={project.link} target="_blank" rel="noopener noreferrer">
-            View Project
-          </a>
-        </div>
-      ))}
+      <h1 id="title">My Projects</h1>
+      <div className="project-content">
+        {projects.map((project) => (
+          <div key={project.id} className="project-list">
+            <h2>{project.name}</h2>
+            <p>{project.description}</p>
+            <p>{project.tags.join(", ")}</p>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              View Project
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

@@ -1,9 +1,30 @@
 .project-container {
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/projects-page.png");
-  background-repeat: no-repeat; /* förhindra att bilden upprepas */
-  background-size: cover; /* skala så den täcker hela ytan */
-  background-position: center;
   padding: 0;
+}
+
+#title {
+  padding: 50px 80px;
+  color: white;
+  font-weight: bolder;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-container a {
+  text-decoration: none;
+  color: inherit;
 }
