@@ -4,8 +4,14 @@
   padding: 0;
 }
 
+h1 {
+  padding: 50px 180px;
+  color: white;
+  font-weight: bolder;
+}
+
 .about-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding-right: 100px; /* move visual padding to content, not background area */
+  padding-right: 100px;
 }
