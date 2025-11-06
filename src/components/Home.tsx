@@ -4,15 +4,11 @@ import Navbar from "./Navbar"
 
 export default function Home() {
   return (
-
     <div className="home-container">
-
-      <Navbar />
-
       <div className="introduction">
         <img src={lisaupperud} alt="Lisa Upperud smiling to the camera" />
         <div className="introduction-text">
-          <h1>WELCOME</h1>
+          <h1>HI! I'M LISA</h1>
           <p>
             bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
             bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
@@ -21,11 +17,8 @@ export default function Home() {
           </p>
         </div>
       </div>
-      
     </div>
-
   )
-
 
   /*
       <div className="home-container">
@@ -44,5 +37,5 @@ export default function Home() {
     </div>
   
   
-  */ 
+  */
 }

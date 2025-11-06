@@ -10,7 +10,6 @@
 
 .links {
   display: flex;
-  gap: 20px;
 }
 
 .links a {
@@ -18,9 +17,8 @@
   font-weight: bold;
   margin: 0 30px;
   text-decoration: none;
-  color: #ff8b59;
+  color: #433285;
   transition: transform 0.2s ease, color 0.2s ease;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .links a:hover {
