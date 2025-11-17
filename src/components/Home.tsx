@@ -10,31 +10,10 @@ export default function Home() {
           <h1>HI! I'M LISA</h1>
           <p>
             bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla
+            bla bla bla bla bla bla bla 
           </p>
         </div>
       </div>
     </div>
   )
-
-  /*
-      <div className="home-container">
-      <div className="introduction">
-        <img src={lisaupperud} alt="Lisa Upperud smiling to the camera" />
-        <div className="introduction-text">
-          <h1>WELCOME</h1>
-          <p>
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla
-          </p>
-        </div>
-      </div>
-    </div>
-  
-  
-  */
 }
