@@ -1,4 +1,5 @@
 import lisaupperud from "../assets/lisaupperud.jpeg"
+import deco from "../assets/deco.png"
 import "./Home.css"
 
 export default function Home() {
@@ -7,13 +8,13 @@ export default function Home() {
       <div className="introduction">
         <img src={lisaupperud} alt="Lisa Upperud smiling to the camera" />
         <div className="introduction-text">
-          <h1>HI! I'M LISA</h1>
-          <p>
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla 
-          </p>
+          <h1>HI!</h1>
+          <h2>I'M LISA</h2>
+          <h3>IT'S NICE TO MEET YOU!</h3>
+          <p>CLICK HERE TO GET TO KNOW ME!</p>
         </div>
       </div>
+      <img src={deco} alt="" />
     </div>
   )
 }
