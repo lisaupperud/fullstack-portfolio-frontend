@@ -4,8 +4,8 @@ import { apiRequest } from "../api/apiClient"
 export interface Project {
   id: string
   name: string
-  description: string
-  link: string
+  desc: string
+  link: string[]
   tags: string[]
   iconKey: string
 }

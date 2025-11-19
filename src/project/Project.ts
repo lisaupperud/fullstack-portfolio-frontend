@@ -4,7 +4,7 @@ export interface Project {
   id: string
   name: string
   desc: string
-  link: string
+  link: string[]
   tags: string[]
   iconKey: string
 }

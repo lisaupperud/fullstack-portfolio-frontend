@@ -1,21 +1,44 @@
 .project-container {
   width: 100%;
-  height: 100vh;
+  height: auto;
   padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /*background-color: aqua;*/
 }
 
 #title {
-  padding: 50px 80px;
-  color: white;
+  color: black;
   font-weight: bolder;
+  font-size: 40px;
+  padding: 0;
+  margin-left: 170px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#copy {
+  color: black;
+  font-weight: bolder;
+  padding: 0;
+  margin-left: 200px;
+  font-size: 30px;
+}
+
+#short-copy {
+  color: black;
+  font-weight: bolder;
+  padding: 0;
+  margin-left: 170px;
+  font-size: 20px;
 }
 
 .project-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  color: black;
+  margin-left: 200px;
 }
 
 .project-list {

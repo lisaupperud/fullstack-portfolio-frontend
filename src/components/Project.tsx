@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { type Project, fetchProjects } from "../project/projectService"
 import "./Project.css"
+import Git from "../assets/github.png"
 
 /* Component to display a list of projects
     fetches data from backend with the fetchProjects() function
@@ -11,6 +12,7 @@ import "./Project.css"
 export default function ProjectList() {
   const [projects, setProjects] = useState<Project[]>([])
   const [loading, setLoading] = useState<boolean>(true)
+  const [showProjects, setShowProjects] = useState(false)
 
   useEffect(() => {
     fetchProjects()
@@ -25,19 +27,35 @@ export default function ProjectList() {
 
   return (
     <div className="project-container">
-      <h1 id="title">My Projects</h1>
-      <div className="project-content">
-        {projects.map((project) => (
-          <div key={project.id} className="project-list">
-            <h2>{project.name}</h2>
-            <p>{project.description}</p>
-            <p>{project.tags.join(", ")}</p>
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
-              View Project
-            </a>
-          </div>
-        ))}
-      </div>
+      <h1 id="title" onClick={() => setShowProjects(!showProjects)}>
+        PROJECTS
+      </h1>
+      <p id="copy">SHORT, BOLD COPY ABOUT SECTION</p>
+      <p id="short-copy">Some explanation...</p>
+
+      {showProjects && (
+        <div className="project-content">
+          {projects.map((project) => (
+            <div key={project.id} className="project-list">
+              <h2>{project.name}</h2>
+              <p>{project.desc}</p>
+              <p>{project.tags.join(", ")}</p>
+              <div>
+                {project.link.map((url) => (
+                  <a
+                    key={url}
+                    href={url}
+                    target="_blank"
+                    rel="noopener norefferer"
+                  >
+                    <img src={Git} alt="" />
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   )
 }
