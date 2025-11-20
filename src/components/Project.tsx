@@ -9,6 +9,8 @@ import Git from "../assets/github.png"
     renders simple list of cards with project name, description, tags and link
 */
 
+// TODO - fix images based on string containing git/vercel
+
 export default function ProjectList() {
   const [projects, setProjects] = useState<Project[]>([])
   const [loading, setLoading] = useState<boolean>(true)
@@ -27,11 +29,13 @@ export default function ProjectList() {
 
   return (
     <div className="project-container">
-      <h1 id="title" onClick={() => setShowProjects(!showProjects)}>
-        PROJECTS
-      </h1>
-      <p id="copy">SHORT, BOLD COPY ABOUT SECTION</p>
-      <p id="short-copy">Some explanation...</p>
+      <div>
+        <h1 id="title" onClick={() => setShowProjects(!showProjects)}>
+          PROJECTS
+        </h1>
+        <p id="copy">SHORT, BOLD COPY ABOUT SECTION</p>
+        <p id="short-copy">Some explanation...</p>
+      </div>
 
       {showProjects && (
         <div className="project-content">
@@ -40,7 +44,7 @@ export default function ProjectList() {
               <h2>{project.name}</h2>
               <p>{project.desc}</p>
               <p>{project.tags.join(", ")}</p>
-              <div>
+              <div className="project-links">
                 {project.link.map((url) => (
                   <a
                     key={url}

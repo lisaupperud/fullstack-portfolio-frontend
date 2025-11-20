@@ -2,9 +2,10 @@
   width: 100%;
   height: auto;
   padding: 0;
-  margin: 0;
+  margin: 0 200px;
   display: flex;
   flex-direction: column;
+  gap: 30px;
   /*background-color: aqua;*/
 }
 
@@ -13,7 +14,7 @@
   font-weight: bolder;
   font-size: 40px;
   padding: 0;
-  margin-left: 170px;
+  /*margin-left: 170px;*/
   text-decoration: underline;
   cursor: pointer;
 }
@@ -22,7 +23,7 @@
   color: black;
   font-weight: bolder;
   padding: 0;
-  margin-left: 200px;
+  /*margin-left: 200px;*/
   font-size: 30px;
 }
 
@@ -30,7 +31,7 @@
   color: black;
   font-weight: bolder;
   padding: 0;
-  margin-left: 170px;
+  /*margin-left: 170px;*/
   font-size: 20px;
 }
 
@@ -38,13 +39,24 @@
   display: flex;
   flex-direction: column;
   color: black;
-  margin-left: 200px;
+  width: 80%;
+  /*margin-left: 200px;*/
 }
 
 .project-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.project-links img {
+  width: 90px;
+  height: auto;
 }
 
 .project-container a {
