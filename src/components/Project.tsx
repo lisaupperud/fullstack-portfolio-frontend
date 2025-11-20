@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { type Project, fetchProjects } from "../project/projectService"
 import "./Project.css"
 import Git from "../assets/github.png"
+import { useToggle } from "../hooks/useToggle"
 
 /* Component to display a list of projects
     fetches data from backend with the fetchProjects() function
@@ -14,7 +15,7 @@ import Git from "../assets/github.png"
 export default function ProjectList() {
   const [projects, setProjects] = useState<Project[]>([])
   const [loading, setLoading] = useState<boolean>(true)
-  const [showProjects, setShowProjects] = useState(false)
+  const { value: showProjects, toggle } = useToggle()
 
   useEffect(() => {
     fetchProjects()
@@ -30,7 +31,7 @@ export default function ProjectList() {
   return (
     <div className="project-container">
       <div>
-        <h1 id="title" onClick={() => setShowProjects(!showProjects)}>
+        <h1 id="title" onClick={toggle}>
           PROJECTS
         </h1>
         <p id="copy">SHORT, BOLD COPY ABOUT SECTION</p>
