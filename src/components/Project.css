@@ -9,33 +9,10 @@
   background-color: yellow;
 }
 
-#title {
-  color: black;
-  font-weight: bolder;
-  font-size: 40px;
-  padding: 0;
-  margin: 0;
-  /*margin-left: 170px;*/
-  text-decoration: underline;
-  cursor: pointer;
+.project-container a {
+  text-decoration: none;
+  color: inherit;
 }
-
-#copy {
-  color: black;
-  font-weight: bolder;
-  padding: 0;
-  /*margin-left: 200px;*/
-  font-size: 30px;
-}
-
-#short-copy {
-  color: black;
-  font-weight: bolder;
-  padding: 0;
-  /*margin-left: 170px;*/
-  font-size: 20px;
-}
-
 .project-content {
   display: flex;
   flex-direction: column;
@@ -58,9 +35,4 @@
 .project-links img {
   width: 90px;
   height: auto;
-}
-
-.project-container a {
-  text-decoration: none;
-  color: inherit;
 }
