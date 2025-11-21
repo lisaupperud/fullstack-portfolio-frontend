@@ -4,6 +4,7 @@ import Home from "./components/Home"
 import Navbar from "./components/Navbar"
 import ProjectList from "./components/Project"
 import Work from "./components/Work"
+import Contact from "./components/Contact"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <ProjectList />
       <Work />
       <About />
+      <Contact />
     </div>
   )
 }
