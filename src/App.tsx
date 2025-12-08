@@ -1,10 +1,10 @@
 import "./App.css"
-import About from "./components/About"
-import Home from "./components/Home"
-import Navbar from "./components/Navbar"
-import ProjectList from "./components/Project"
-import Work from "./components/Work"
-import Contact from "./components/Contact"
+import About from "./components/about/About"
+import Home from "./components/home/Home"
+import Navbar from "./components/nav-bar/Navbar"
+import ProjectList from "./components/projects/Project"
+import Work from "./components/work/Work"
+import Contact from "./components/contact/Contact"
 
 function App() {
   return (
