@@ -1,9 +1,9 @@
 .project-container {
-  width: 80%;
+  width: 70%;
   height: auto;
   padding: 0;
   padding-bottom: 200px;
-  margin: 0 200px;
+  margin: 0 300px;
   display: flex;
   flex-direction: column;
   gap: 30px;
