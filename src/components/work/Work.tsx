@@ -25,8 +25,8 @@ export default function Work() {
         <div className="work-content">
           <div className="work-list">
             <h2>JUNIOR SYSTEM DEVELOPER</h2>
-            <h4>RESTAURANT INDUSTRY</h4>
-            <h4>JUNE 2025 - AUG 2025 || SVEA BANK</h4>
+            <h4>SVEA BANK</h4>
+            <h4>JUNE 2025 - AUG 2025</h4>
             <ul>
               <li>
                 <strong>API Development:</strong>Built a robust validation REST
