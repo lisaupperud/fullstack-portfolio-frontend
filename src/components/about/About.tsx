@@ -1,5 +1,5 @@
 import "./About.css"
-import { useToggle } from "../hooks/useToggle"
+import { useToggle } from "../../hooks/useToggle"
 
 export default function About() {
   const { value: showAbout, toggle } = useToggle()

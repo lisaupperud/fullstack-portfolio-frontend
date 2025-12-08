@@ -1,5 +1,5 @@
 import "./Work.css"
-import { useToggle } from "../hooks/useToggle"
+import { useToggle } from "../../hooks/useToggle"
 
 export default function Work() {
   const { value: showWork, toggle } = useToggle()
@@ -10,8 +10,15 @@ export default function Work() {
         <h1 id="title" onClick={toggle}>
           WORK EXPERIENCE
         </h1>
-        <p id="copy">SHORT, BOLD COPY ABOUT SECTION</p>
-        <p id="short-copy">Some explanation...</p>
+        <p id="copy">
+          FROM THE SERVICE INDUSTRY TO SERVING CODE - TAKE A LOOK INTO MY WORK
+          EXPERIENCE.
+        </p>
+        <p id="short-copy">
+          CV not doing it for you? Take a look at a longer summary of my
+          previous employments, from the restaurant and nightclub industry in
+          Stockholm to my first job as a developer.
+        </p>
       </div>
 
       {showWork && (

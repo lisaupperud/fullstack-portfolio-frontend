@@ -1,5 +1,5 @@
 import "./Contact.css"
-import { useToggle } from "../hooks/useToggle"
+import { useToggle } from "../../hooks/useToggle"
 
 export default function Contact() {
   const { value: showContact, toggle } = useToggle()

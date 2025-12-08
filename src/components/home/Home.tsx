@@ -1,7 +1,7 @@
-import lisaupperud from "../assets/lisaupperud.jpeg"
-import deco from "../assets/deco.png"
+import lisaupperud from "../../assets/lisaupperud.jpeg"
+import deco from "../../assets/deco.png"
 import "./Home.css"
-import { scrollToId } from "../utils/scroll"
+import { scrollToId } from "../../utils/scroll"
 
 export default function Home() {
   return (

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { type Project, fetchProjects } from "../../project/projectService"
 import "./Project.css"
-import Git from "../assets/github.png"
+import Git from "../../assets/github.png"
 import { useToggle } from "../../hooks/useToggle"
 
 /* Component to display a list of projects
