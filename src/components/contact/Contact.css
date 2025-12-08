@@ -3,10 +3,10 @@
   height: auto;
   padding: 0;
   margin: 0 200px;
+  margin-bottom: 200px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  background-color: purple;
 }
 
 .contact-content {
@@ -14,4 +14,27 @@
   flex-direction: column;
   color: black;
   width: 80%;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+#arrows {
+  width: 250px;
+  height: 150px;
+}
+
+#icons {
+  width: 130px;
+  height: 130px;
+}
+
+#thanks {
+  width: 500px;
+  font-weight: bolder;
+  font-size: 50px;
 }
