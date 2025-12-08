@@ -1,43 +1,56 @@
-
-.scroll-indicator {
+.nav-line-container {
   position: fixed;
-  left: 40px;
-  top: 10%;
-  height: 80%;
+  left: 48px; /* adjust horizontally to place next to content */
+  top: 120px; /* adjust vertical start */
+  bottom: 80px; /* leave some spacing at bottom */
+  width: 44px; /* area reserved for line + dots */
   display: flex;
-  flex-direction: column;
   align-items: center;
   pointer-events: auto;
   z-index: 999;
 }
 
-.line {
+.nav-line {
   position: absolute;
-  width: 4px;
-  background: #331e73;
-  height: 100%;
-  border-radius: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px; /* line thickness */
+  background: #433285; /* purple */
+  top: 0;
+  bottom: 0;
+  border-radius: 3px;
 }
 
-.dots {
+.nav-dots {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 30px 0;
+  width: 100%;
+  padding: 24px 0; /* spacing top/bottom for dot area */
+  align-items: center;
 }
 
-.dot {
-  width: 22px;
-  height: 22px;
+.nav-dot {
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  background: #331e73;
-  border: 3px solid #331e73;
+  background: #433285;
+  border: 3px solid #433285;
   cursor: pointer;
-  /*transition: background 0.3s ease, transform 0.3s ease;*/
+  transition: background 200ms ease, transform 200ms ease, box-shadow 200ms ease;
 }
 
-.dot.active {
-  background: #f4c3d9; 
-  transform: scale(1.2);
+.nav-dot.active {
+  background: #f4c3d9; /* light pink when active */
+  transform: scale(1.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Small screens: hide or reposition */
+@media (max-width: 900px) {
+  .nav-line-container {
+    display: none;
+  } /* hide on small screens */
 }

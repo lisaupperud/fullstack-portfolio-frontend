@@ -15,12 +15,12 @@ export default function NavigationLine({ sections }: { sections: string[] }) {
         const inView =
           rect.top <= window.innerHeight * 0.4 &&
           rect.bottom >= window.innerHeight * 0.4
-
         if (inView) {
           setActive(id)
-          break
+          return
         }
       }
+      setActive("")
     }
 
     window.addEventListener("scroll", handleScroll)
@@ -29,15 +29,16 @@ export default function NavigationLine({ sections }: { sections: string[] }) {
   }, [sections])
 
   return (
-    <div className="scroll-indicator">
-      <div className="line"></div>
-      <div className="dots">
+    <div className="nav-line-container" aria-hidden="true">
+      <div className="nav-line" />
+      <div className="nav-dots">
         {sections.map((id) => (
-          <div
+          <button
             key={id}
-            className={`dot ${active === id ? "active" : ""}`}
+            className={`nav-dot ${active === id ? "active" : ""}`}
             onClick={() => scrollToId(id)}
-          ></div>
+            aria-label={`Go to ${id}`}
+          />
         ))}
       </div>
     </div>
