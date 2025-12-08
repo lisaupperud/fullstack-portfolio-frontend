@@ -5,7 +5,7 @@ export default function Contact() {
   const { value: showContact, toggle } = useToggle()
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="section-contact">
       <div>
         <h1 id="title" onClick={toggle}>
           CONTACT

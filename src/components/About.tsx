@@ -5,7 +5,7 @@ export default function About() {
   const { value: showAbout, toggle } = useToggle()
 
   return (
-    <div className="about-container">
+    <div className="about-container" id="section-about">
       <div>
         <h1 id="title" onClick={toggle}>
           ABOUT ME

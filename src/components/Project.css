@@ -36,3 +36,7 @@
   width: 90px;
   height: auto;
 }
+
+#title {
+  cursor: pointer;
+}
