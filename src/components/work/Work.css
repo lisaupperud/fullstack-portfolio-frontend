@@ -10,6 +10,30 @@
   /*background-color: aqua;*/
 }
 
+.underline-wrapper {
+  height: 40px;
+  position: relative;
+  /*position: relative;
+  padding-left: 10px;*/
+}
+
+.underline {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 900px;
+  height: 8px;
+  background: #433285;
+  transform: translateY(-50%);
+  /*position: absolute;
+  left: 280px;
+  top: -201px;
+  bottom: 0;
+  width: 10px;
+  background: #433285;
+  z-index: 20;*/
+}
+
 .work-content {
   display: flex;
   flex-direction: column;

@@ -14,6 +14,9 @@ export default function Contact() {
         <h1 id="title" onClick={toggle}>
           CONTACT
         </h1>
+        <div className="underline-wrapper">
+          <div className="underline" />
+        </div>
         <p id="copy">INTRIGUED? WANT TO KNOW MORE?</p>
         <p id="short-copy">Let's get in contact!</p>
 

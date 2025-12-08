@@ -9,6 +9,32 @@
   gap: 30px;
 }
 
+.underline-wrapper {
+  height: 40px;
+  position: relative;
+  margin-left: -10px;
+  padding-left: 0;
+  /*position: relative;
+  padding-left: 10px;*/
+}
+
+.underline {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1000px;
+  height: 8px;
+  background: #433285;
+  transform: translateY(-50%);
+  /*position: absolute;
+  left: 280px;
+  top: -201px;
+  bottom: 0;
+  width: 10px;
+  background: #433285;
+  z-index: 20;*/
+}
+
 .project-container a {
   text-decoration: none;
   color: inherit;

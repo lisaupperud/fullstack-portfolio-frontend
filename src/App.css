@@ -31,7 +31,6 @@
 
 .timeline-wrapper {
   position: relative;
-  padding-left: 10px;
 }
 
 .timeline-line {
@@ -40,6 +39,7 @@
   top: -201px;
   bottom: 0;
   width: 10px;
+  margin-bottom: 150px;
   background: #433285;
   z-index: 20;
 }

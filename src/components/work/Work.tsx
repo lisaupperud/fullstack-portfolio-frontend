@@ -1,5 +1,4 @@
 import "./Work.css"
-import "../../App.css"
 import { useToggle } from "../../hooks/useToggle"
 
 export default function Work() {
@@ -11,6 +10,9 @@ export default function Work() {
         <h1 id="title" onClick={toggle}>
           WORK EXPERIENCE
         </h1>
+        <div className="underline-wrapper">
+          <div className="underline" />
+        </div>
         <p id="copy">
           FROM THE SERVICE INDUSTRY TO SERVING CODE - TAKE A LOOK!
         </p>

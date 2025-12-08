@@ -3,7 +3,6 @@ import { type Project, fetchProjects } from "../../project/projectService"
 import "./Project.css"
 import Git from "../../assets/github.png"
 import { useToggle } from "../../hooks/useToggle"
-import "../../App.css"
 
 /* Component to display a list of projects
     fetches data from backend with the fetchProjects() function
@@ -31,10 +30,14 @@ export default function ProjectList() {
 
   return (
     <div className="project-container" id="projects">
-      <div className="timeline-dot">
+      <div>
         <h1 id="title" onClick={toggle}>
           PROJECTS
         </h1>
+        <div className="underline-wrapper">
+          <div className="underline" />
+        </div>
+
         <p id="copy">A SELECTION OF THE PROJECTS THAT I AM MOST PROUD OF.</p>
         <p id="short-copy">
           A showcase of the projects that show a wide range of competence and
