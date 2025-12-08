@@ -6,13 +6,13 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  background-color: yellow;
 }
 
 .project-container a {
   text-decoration: none;
   color: inherit;
 }
+
 .project-content {
   display: flex;
   flex-direction: column;
@@ -25,6 +25,11 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 40px;
+}
+
+.project-list h2 {
+  font-size: xx-large;
 }
 
 .project-links {
@@ -35,4 +40,9 @@
 .project-links img {
   width: 90px;
   height: auto;
+}
+
+#tags {
+  width: fit-content;
+  font-weight: bold;
 }
