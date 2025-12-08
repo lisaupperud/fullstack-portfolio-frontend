@@ -34,8 +34,12 @@ export default function ProjectList() {
         <h1 id="title" onClick={toggle}>
           PROJECTS
         </h1>
-        <p id="copy">SHORT, BOLD COPY ABOUT SECTION</p>
-        <p id="short-copy">Some explanation...</p>
+        <p id="copy">A SELECTION OF THE PROJECTS THAT I AM MOST PROUD OF.</p>
+        <p id="short-copy">
+          A showcase of the projects that show a wide range of competence and
+          knowledge. Scroll thorugh, read and visit the Repositories to get a
+          deeper look into the codebase.
+        </p>
       </div>
 
       {showProjects && (
@@ -44,7 +48,7 @@ export default function ProjectList() {
             <div key={project.id} className="project-list">
               <h2>{project.name}</h2>
               <p>{project.desc}</p>
-              <p>{project.tags.join(", ")}</p>
+              <p id="tags">{project.tags.join(", ")}</p>
               <div className="project-links">
                 {project.link.map((url) => (
                   <a
