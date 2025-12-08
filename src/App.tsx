@@ -1,5 +1,4 @@
 import "./App.css"
-import About from "./components/about/About"
 import Home from "./components/home/Home"
 import Navbar from "./components/nav-bar/Navbar"
 import ProjectList from "./components/projects/Project"
