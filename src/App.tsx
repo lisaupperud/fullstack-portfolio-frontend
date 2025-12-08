@@ -6,12 +6,56 @@ import Work from "./components/work/Work"
 import Contact from "./components/contact/Contact"
 
 function App() {
+  /*useEffect(() => {
+    const dots = {
+      projects: document.getElementById("dot-projects"),
+      work: document.getElementById("dot-work"),
+      contsct: document.getElementById("dot-contact"),
+    }
+
+    const sections = document.querySelectorAll("[data-section]")
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const id = entry.target.id
+          const dot =
+            id === "projects"
+              ? dots.projects
+              : id === "work"
+              ? dots.work
+              : id === "contact"
+              ? dots.contsct
+              : null
+
+          if (dot) {
+            if (entry.isIntersecting) {
+              dot.classList.add("active")
+            } else {
+              dot.classList.remove("active")
+            }
+          }
+        })
+      },
+      { threshold: 0.5 }
+    )
+
+    sections.forEach((section) => {
+      observer.observe(section)
+    })
+
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section)
+      })
+    }
+  }, [])*/
+
   return (
     <div className="app">
       <Navbar />
       <Home />
       <div className="timeline-wrapper">
-        {/* The purple line */}
         <div className="timeline-line" />
         <ProjectList />
         <Work />
