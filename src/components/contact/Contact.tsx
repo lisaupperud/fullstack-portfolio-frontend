@@ -3,13 +3,14 @@ import { useToggle } from "../../hooks/useToggle"
 import arrow from "../../assets/arrow-right.png"
 import linkedin from "../../assets/linkedin.png"
 import mail from "../../assets/mail.png"
+import "../../App.css"
 
 export default function Contact() {
   const { value: showContact, toggle } = useToggle()
 
   return (
     <div className="contact-container" id="section-contact">
-      <div>
+      <div className="timeline-dot">
         <h1 id="title" onClick={toggle}>
           CONTACT
         </h1>

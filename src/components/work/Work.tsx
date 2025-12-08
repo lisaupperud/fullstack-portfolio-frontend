@@ -1,4 +1,5 @@
 import "./Work.css"
+import "../../App.css"
 import { useToggle } from "../../hooks/useToggle"
 
 export default function Work() {
@@ -6,7 +7,7 @@ export default function Work() {
 
   return (
     <div className="work-container" id="section-work">
-      <div>
+      <div className="timeline-dot">
         <h1 id="title" onClick={toggle}>
           WORK EXPERIENCE
         </h1>

@@ -28,3 +28,19 @@
   align-items: center;
   justify-content: center;
 }
+
+.timeline-wrapper {
+  position: relative;
+  padding-left: 10px;
+}
+
+/* 2. The vertical purple line – starts exactly under the centre of your 300px photo */
+.timeline-line {
+  position: absolute;
+  left: 280px; /* 130px (margin-left from Home) + 150px (half of photo) */
+  top: -201px; /* matches your .home-container margin-top */
+  bottom: 0;
+  width: 10px;
+  background: #433285;
+  z-index: 20;
+}
