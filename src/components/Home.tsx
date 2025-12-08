@@ -1,6 +1,7 @@
 import lisaupperud from "../assets/lisaupperud.jpeg"
 import deco from "../assets/deco.png"
 import "./Home.css"
+import { scrollToId } from "../utils/scroll"
 
 export default function Home() {
   return (
@@ -11,7 +12,9 @@ export default function Home() {
           <h1>HI!</h1>
           <h2>I'M LISA</h2>
           <h3>IT'S NICE TO MEET YOU!</h3>
-          <p>CLICK HERE TO GET TO KNOW ME!</p>
+          <p onClick={() => scrollToId("projects")}>
+            CLICK HERE TO GET TO KNOW ME!
+          </p>
         </div>
       </div>
       <img src={deco} alt="" />

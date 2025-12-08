@@ -55,4 +55,5 @@ p {
 
 .introduction-text p {
   text-decoration: underline;
+  cursor: pointer;
 }
