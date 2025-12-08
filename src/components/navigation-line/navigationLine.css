@@ -1,0 +1,42 @@
+.scroll-indicator {
+  position: fixed;
+  left: 40px;
+  top: 10%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: auto;
+  z-index: 999;
+}
+
+.line {
+  position: absolute;
+  width: 4px;
+  background: #331e73;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.dots {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 30px 0;
+}
+
+.dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #331e73;
+  cursor: pointer;
+  /*transition: background 0.3s ease, transform 0.3s ease;*/
+}
+
+.dot.active {
+  background: #f4c3d9; /* your light pink */
+  transform: scale(1.2);
+}

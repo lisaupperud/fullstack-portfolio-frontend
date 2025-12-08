@@ -29,7 +29,7 @@ export default function ProjectList() {
   }
 
   return (
-    <div className="project-container" id="projects">
+    <div className="project-container" id="section-projects">
       <div>
         <h1 id="title" onClick={toggle}>
           PROJECTS
