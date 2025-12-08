@@ -4,6 +4,7 @@ import Navbar from "./components/nav-bar/Navbar"
 import ProjectList from "./components/projects/Project"
 import Work from "./components/work/Work"
 import Contact from "./components/contact/Contact"
+import deco from "./assets/deco.png"
 
 function App() {
   /*useEffect(() => {
@@ -61,6 +62,7 @@ function App() {
         <Work />
         <Contact />
       </div>
+      <img src={deco} alt="" className="deco-img"/>
     </div>
   )
 }

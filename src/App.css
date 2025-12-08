@@ -44,6 +44,13 @@
   z-index: 20;
 }
 
+/*.deco-img {
+  position: absolute;
+  right: -150px;
+  bottom: -100px;
+  width: 400px;
+}*/
+
 /*.timeline-dot {
   position: absolute;
   left: 280px - 14px; 
