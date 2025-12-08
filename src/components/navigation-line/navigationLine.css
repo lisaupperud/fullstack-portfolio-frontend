@@ -1,3 +1,4 @@
+
 .scroll-indicator {
   position: fixed;
   left: 40px;
@@ -30,13 +31,13 @@
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background: #ffffff;
+  background: #331e73;
   border: 3px solid #331e73;
   cursor: pointer;
   /*transition: background 0.3s ease, transform 0.3s ease;*/
 }
 
 .dot.active {
-  background: #f4c3d9; /* your light pink */
+  background: #f4c3d9; 
   transform: scale(1.2);
 }
