@@ -40,16 +40,32 @@
   width: 80%;
 }
 
-.contact-links {
+.contact-links-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 15px;
+  gap: 25px;
 }
 
-#arrows {
-  width: 250px;
-  height: 150px;
+.arrow-line {
+  flex-grow: 0.5; /* makes line fill space */
+  height: 10px; /* thickness */
+  background: #433285; /* purple */
+  position: relative;
+  margin-left: -10px;
+}
+
+.arrow-line::after {
+  content: "";
+  position: absolute;
+  right: -12px; /* arrowhead position */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent; /* arrow size – adjust for bigger/smaller */
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #433285; /* purple arrowhead */
 }
 
 #icons {
