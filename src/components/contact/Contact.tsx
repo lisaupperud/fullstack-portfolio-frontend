@@ -1,6 +1,5 @@
 import "./Contact.css"
 import { useToggle } from "../../hooks/useToggle"
-import arrow from "../../assets/arrow-right.png"
 import linkedin from "../../assets/linkedin.png"
 import mail from "../../assets/mail.png"
 import "../../App.css"
