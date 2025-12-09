@@ -17,7 +17,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <img src={deco} alt="" />
+      <img src={deco} alt="" id="deco-img" />
     </div>
   )
 }

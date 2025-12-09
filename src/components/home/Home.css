@@ -57,3 +57,50 @@ p {
   text-decoration: underline;
   cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+  .home-container {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 40px !important;
+    margin: 60px 0 !important;
+    text-align: center;
+  }
+
+  .introduction {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    max-width: 500px;
+    margin-left: 0 !important;
+    gap: 30px;
+  }
+
+  .introduction img {
+    width: 230px !important;
+    height: 230px !important;
+    border-radius: 28px !important;
+  }
+
+  .introduction-text {
+    align-items: center;
+  }
+
+  .introduction-text p {
+    margin-top: 16px;
+  }
+
+  #deco-img {
+    display: none !important;
+  }
+}
+
+/* Optional: make photo a bit bigger on tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .introduction img {
+    width: 320px !important;
+    height: 320px !important;
+  }
+}
