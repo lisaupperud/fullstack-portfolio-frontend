@@ -47,8 +47,21 @@
   gap: 25px;
 }
 
+.arrow-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.arrow-container p {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 900;
+}
+
 .arrow-line {
-  flex-grow: 0.5; /* makes line fill space */
+  /*flex-grow: 0.5; /* makes line fill space */
+  width: 300px;
   height: 10px; /* thickness */
   background: #433285; /* purple */
   position: relative;

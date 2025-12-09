@@ -22,7 +22,10 @@ export default function Contact() {
         {showContact && (
           <div className="contact-content">
             <div className="contact-links-container">
-              <div className="arrow-line" />
+              <div className="arrow-container">
+                <p>SEND ME A MESSAGE</p>
+                <div className="arrow-line" />
+              </div>
               <a
                 href="https://www.linkedin.com/in/lisaupperud"
                 target="_blank"
@@ -31,8 +34,12 @@ export default function Contact() {
                 <img src={linkedin} alt="LinkedIn Logo" id="icons" />
               </a>
             </div>
+
             <div className="contact-links-container">
-              <div className="arrow-line" />
+              <div className="arrow-container">
+                <p>... OR AN EMAIL</p>
+                <div className="arrow-line" />
+              </div>
               <a href="mailto:lisa.upp@hotmail.com">
                 <img src={mail} alt="E-mail Icon" id="icons" />
               </a>
