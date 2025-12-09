@@ -56,22 +56,14 @@
   transform: rotate(90deg);
 }
 
-/*.timeline-dot {
-  position: absolute;
-  left: 280px - 14px; 
-  width: 28px;
-  height: 28px;
-  border: 6px solid #433285;
-  background: #f8e1f4;   
-  border-radius: 50%;
-  z-index: 21;
-  transition: all 0.4s ease;
-  box-sizing: border-box;
+/* Hide the entire vertical timeline on mobile + tablet */
+@media (max-width: 1024px) {
+
+  .timeline-line {
+    display: none !important;
+  }
+
+  .deco-img {
+    display: none;
+  }
 }
-
-
-.timeline-dot.active {
-  background: #ffc1e3; border-color: #433285;
-  transform: scale(1.3);
-  box-shadow: 0 0 20px rgba(67, 50, 133, 0.4);
-}*/
