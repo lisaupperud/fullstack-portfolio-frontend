@@ -11,8 +11,6 @@ import { useToggle } from "../../hooks/useToggle"
     renders simple list of cards with project name, description, tags and link
 */
 
-// TODO - fix images based on string containing git/vercel
-
 export default function ProjectList() {
   const [projects, setProjects] = useState<Project[]>([])
   const [loading, setLoading] = useState<boolean>(true)
@@ -39,13 +37,18 @@ export default function ProjectList() {
           <div className="underline" />
         </div>
 
-        <p id="copy">A SELECTION OF THE PROJECTS THAT I AM MOST PROUD OF.</p>
-        <p id="short-copy">
+        <p id="copy" className="desktop-only">
+          A SELECTION OF THE PROJECTS THAT I AM MOST PROUD OF.
+        </p>
+        <p id="short-copy" className="desktop-only">
           A showcase of the projects that show a wide range of competence and
           knowledge. Scroll thorugh, read and visit the Repositories to get a
           deeper look into the codebase. Click the tags to sort projects based
           on technology used.
         </p>
+        <div className="mobile-only-wrapper">
+          <p className="mobile-only">Swipe to see the projects</p>
+        </div>
       </div>
 
       {showProjects && (
@@ -87,11 +90,14 @@ export default function ProjectList() {
               </div>
             </div>
           ))}
-          <h1 id="title">WANT TO SEE MORE?</h1>
+
+          <h1 id="title" className="desktop-only">
+            WANT TO SEE MORE?
+          </h1>
           <div className="underline-wrapper">
             <div className="underline" />
           </div>
-          <div>
+          <div className="desktop-only">
             <p id="finish-text">
               TAKE A LOOK AT MY GITHUB PROFILE, WHERE YOU CAN FIND MORE OF MY
               PROJECTS!

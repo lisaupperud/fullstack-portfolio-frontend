@@ -14,8 +14,6 @@
   position: relative;
   margin-left: -10px;
   padding-left: 0;
-  /*position: relative;
-  padding-left: 10px;*/
 }
 
 .underline {
@@ -26,13 +24,6 @@
   height: 8px;
   background: #433285;
   transform: translateY(-50%);
-  /*position: absolute;
-  left: 280px;
-  top: -201px;
-  bottom: 0;
-  width: 10px;
-  background: #433285;
-  z-index: 20;*/
 }
 
 .project-container a {
@@ -45,7 +36,6 @@
   flex-direction: column;
   color: black;
   width: 80%;
-  /*margin-left: 200px;*/
 }
 
 .project-list {
@@ -96,9 +86,9 @@
 }
 
 .arrow-line {
-  flex-grow: 0.5; /* makes line fill space */
-  height: 10px; /* thickness */
-  background: #433285; /* purple */
+  flex-grow: 0.5;
+  height: 10px;
+  background: #433285;
   position: relative;
   margin-left: -10px;
 }
@@ -106,17 +96,82 @@
 .arrow-line::after {
   content: "";
   position: absolute;
-  right: -12px; /* arrowhead position */
+  right: -12px;
   top: 50%;
   transform: translateY(-50%);
   width: 0;
   height: 0;
-  border-top: 20px solid transparent; /* arrow size – adjust for bigger/smaller */
+  border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  border-left: 20px solid #433285; /* purple arrowhead */
+  border-left: 20px solid #433285;
 }
 
 .github-icon {
   width: 100px;
   height: 100px;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* HORIZONTAL SCROLL CONTAINER – ONLY ON MOBILE */
+@media (max-width: 1024px) {
+  .project-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #title {
+    font-size: 2rem;
+  }
+
+  .project-content {
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 40px 5vw;
+    gap: 30px;
+    scrollbar-width: none;
+  }
+
+  .project-content::-webkit-scrollbar {
+    display: none;
+  }
+
+  .project-header {
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .underline-wrapper {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .underline {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .mobile-only {
+    display: block;
+    font-weight: 600;
+  }
 }
