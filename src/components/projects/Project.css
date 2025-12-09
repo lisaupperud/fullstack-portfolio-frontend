@@ -69,6 +69,14 @@
   height: auto;
 }
 
-#title {
-  cursor: pointer;
+.tags-container {
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  background-color: #6d56b0;
+  padding: 5px 5px;
+  border-radius: 5px;
+  font-weight: 600;
 }

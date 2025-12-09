@@ -42,7 +42,8 @@ export default function ProjectList() {
         <p id="short-copy">
           A showcase of the projects that show a wide range of competence and
           knowledge. Scroll thorugh, read and visit the Repositories to get a
-          deeper look into the codebase.
+          deeper look into the codebase. Click the tags to sort projects based
+          on technology used.
         </p>
       </div>
 
@@ -52,7 +53,13 @@ export default function ProjectList() {
             <div key={project.id} className="project-list">
               <h2>{project.name}</h2>
               <p>{project.desc}</p>
-              <p id="tags">{project.tags.join(", ")}</p>
+              <div className="tags-container">
+                {project.tags.map((tag, index) => (
+                  <span key={index} className="tag">
+                    {tag}
+                  </span>
+                ))}
+              </div>
               <div className="project-links">
                 {project.link.map((url) => (
                   <a
