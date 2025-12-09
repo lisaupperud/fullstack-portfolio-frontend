@@ -74,6 +74,26 @@ export default function ProjectList() {
               </div>
             </div>
           ))}
+          <h1 id="title">WANT TO SEE MORE?</h1>
+          <div className="underline-wrapper">
+            <div className="underline" />
+          </div>
+          <div>
+            <p id="finish-text">
+              TAKE A LOOK AT MY GITHUB PROFILE, WHERE YOU CAN FIND MORE OF MY
+              PROJECTS!
+            </p>
+            <div className="github-link-container">
+              <div className="arrow-line" />
+              <a
+                href="https://github.com/lisaupperud"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Git} alt="Github Icon" className="github-icon" />
+              </a>
+            </div>
+          </div>
         </div>
       )}
     </div>

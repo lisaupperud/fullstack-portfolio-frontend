@@ -28,7 +28,11 @@ export default function Contact() {
                 alt="Purple arrow pointing to the right"
                 id="arrows"
               />
-              <a href="">
+              <a
+                href="https://www.linkedin.com/in/lisaupperud"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={linkedin} alt="LinkedIn Logo" id="icons" />
               </a>
             </div>
