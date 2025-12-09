@@ -3,7 +3,7 @@
   height: auto;
   padding: 0;
   margin: 0 300px;
-  margin-bottom: 200px;
+  /*margin-bottom: 200px;*/
   display: flex;
   flex-direction: column;
   gap: 30px;

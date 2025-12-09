@@ -62,7 +62,9 @@ function App() {
         <Work />
         <Contact />
       </div>
-      <img src={deco} alt="" className="deco-img"/>
+      <div className="deco-container">
+        <img src={deco} alt="" className="deco-img"/>
+      </div>
     </div>
   )
 }

@@ -39,17 +39,21 @@
   top: -201px;
   bottom: 0;
   width: 10px;
-  margin-bottom: 150px;
   background: #433285;
   z-index: 20;
 }
 
-/*.deco-img {
-  position: absolute;
-  right: -150px;
-  bottom: -100px;
-  width: 400px;
-}*/
+.deco-container {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.deco-img {
+  width: 300px;
+  height: 300px;
+  transform: rotate(90deg);
+}
 
 /*.timeline-dot {
   position: absolute;
