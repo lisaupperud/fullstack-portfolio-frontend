@@ -7,14 +7,11 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  /*background-color: aqua;*/
 }
 
 .underline-wrapper {
   height: 40px;
   position: relative;
-  /*position: relative;
-  padding-left: 10px;*/
 }
 
 .underline {
@@ -25,13 +22,6 @@
   height: 8px;
   background: #433285;
   transform: translateY(-50%);
-  /*position: absolute;
-  left: 280px;
-  top: -201px;
-  bottom: 0;
-  width: 10px;
-  background: #433285;
-  z-index: 20;*/
 }
 
 .work-content {
@@ -59,6 +49,111 @@
   margin-left: 20px;
 }
 
-#title {
-  cursor: pointer;
+.mobile-only {
+  display: none;
+}
+
+/* MOBILE: Swipeable work experience cards */
+@media (max-width: 1024px) {
+  .work-container {
+    width: 100%;
+    margin: 0;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .underline-wrapper {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .underline {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .work-list {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100%;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* HORIZONTAL SCROLL CAROUSEL */
+  .work-content {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 40px 0 100px;
+    gap: 30px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .work-content::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Each job = one full-screen card */
+  .work-card {
+    min-width: calc(100vw - 60px);
+    max-width: calc(100vw - 60px);
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+
+    background: none;
+    padding: 40px 32px;
+    margin: 0 30px;
+    border-radius: none;
+    border: none;
+  }
+
+  .work-card h2 {
+    font-size: 1.5rem;
+    margin: 0 0 12px 0;
+    color: #433285;
+    text-align: center;
+  }
+
+  .work-card h4 {
+    font-size: 18px;
+    margin: 8px 0;
+    color: black;
+    text-align: center;
+  }
+
+  .work-card ul {
+    margin: 20px 0 0 20px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: black;
+  }
+
+  .work-card li {
+    margin-bottom: 12px;
+  }
+
+  .mobile-only {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Desktop: keep your current layout untouched */
+@media (min-width: 1025px) {
 }
