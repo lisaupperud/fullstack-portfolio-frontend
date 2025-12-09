@@ -10,6 +10,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; /* use when you set background-image on .app or child sections */
+  padding-top: 80px;
 }
 
 /* Ensure direct children span width for layout consistency */

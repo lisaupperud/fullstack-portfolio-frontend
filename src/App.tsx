@@ -5,52 +5,19 @@ import ProjectList from "./components/projects/Project"
 import Work from "./components/work/Work"
 import Contact from "./components/contact/Contact"
 import deco from "./assets/deco.png"
+import { useEffect } from "react"
 
 function App() {
-  /*useEffect(() => {
-    const dots = {
-      projects: document.getElementById("dot-projects"),
-      work: document.getElementById("dot-work"),
-      contsct: document.getElementById("dot-contact"),
+  useEffect(() => {
+    const handleScroll = () => {
+      window.scrollY > 50
+        ? document.querySelector(".navbar")?.classList.add("scrolled")
+        : document.querySelector(".navbar")?.classList.remove("scrolled")
     }
 
-    const sections = document.querySelectorAll("[data-section]")
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const id = entry.target.id
-          const dot =
-            id === "projects"
-              ? dots.projects
-              : id === "work"
-              ? dots.work
-              : id === "contact"
-              ? dots.contsct
-              : null
-
-          if (dot) {
-            if (entry.isIntersecting) {
-              dot.classList.add("active")
-            } else {
-              dot.classList.remove("active")
-            }
-          }
-        })
-      },
-      { threshold: 0.5 }
-    )
-
-    sections.forEach((section) => {
-      observer.observe(section)
-    })
-
-    return () => {
-      sections.forEach((section) => {
-        observer.unobserve(section)
-      })
-    }
-  }, [])*/
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   return (
     <div className="app">
@@ -63,7 +30,7 @@ function App() {
         <Contact />
       </div>
       <div className="deco-container">
-        <img src={deco} alt="" className="deco-img"/>
+        <img src={deco} alt="" className="deco-img" />
       </div>
     </div>
   )

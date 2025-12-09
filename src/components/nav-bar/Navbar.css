@@ -2,10 +2,22 @@
   width: 100%;
   height: 80px;
   padding: 0;
-  background-color: none;
+  background-color: #deb3c3;
   display: flex;
   align-items: center;
   justify-content: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(67, 50, 133, 0.15);
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(222, 179, 195, 0.8);
+  height: 70px;
 }
 
 .buttons {
@@ -18,7 +30,7 @@
   margin: 0 30px;
   text-decoration: none;
   color: #433285;
-  background-color: #deb3c3;
+  background-color: rgba(222, 179, 195, 0.8);
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease, color 0.2s ease;
