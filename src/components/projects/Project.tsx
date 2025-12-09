@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { type Project, fetchProjects } from "../../project/projectService"
 import "./Project.css"
 import Git from "../../assets/github.png"
+import Click from "../../assets/click.png"
 import { useToggle } from "../../hooks/useToggle"
 
 /* Component to display a list of projects
@@ -61,16 +62,28 @@ export default function ProjectList() {
                 ))}
               </div>
               <div className="project-links">
-                {project.link.map((url) => (
-                  <a
-                    key={url}
-                    href={url}
-                    target="_blank"
-                    rel="noopener norefferer"
-                  >
-                    <img src={Git} alt="" />
-                  </a>
-                ))}
+                {project.link.map((url) => {
+                  const isGitHub = url.includes("github.com")
+
+                  return (
+                    <a
+                      key={url}
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                      title={
+                        isGitHub ? "View source on GitHub" : "Visit live site"
+                      }
+                    >
+                      <img
+                        src={isGitHub ? Git : Click}
+                        alt={isGitHub ? "GitHub" : "Live Demo"}
+                        className="link-icon"
+                      />
+                    </a>
+                  )
+                })}
               </div>
             </div>
           ))}
