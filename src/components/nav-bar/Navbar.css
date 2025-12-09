@@ -8,20 +8,23 @@
   justify-content: right;
 }
 
-.links {
+.buttons {
   display: flex;
 }
 
-.links a {
+.buttons button {
   font-size: 26px;
   font-weight: bold;
   margin: 0 30px;
   text-decoration: none;
   color: #433285;
+  background-color: #deb3c3;
+  border: none;
+  cursor: pointer;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.links a:hover {
+.buttons button:hover {
   transform: scale(1.2);
-  color: white;
+  color: #6d56b0;
 }

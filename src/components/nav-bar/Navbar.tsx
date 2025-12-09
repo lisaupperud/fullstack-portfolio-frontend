@@ -1,13 +1,14 @@
+import { scrollToId } from "../../utils/scroll"
 import "./Navbar.css"
 
 export default function Navbar() {
   return (
     <div className="navbar">
-      <div className="links">
-        <a href="">Home</a>
-        <a href="">Projects</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
+      <div className="buttons">
+        <button onClick={() => scrollToId("home")}>Home</button>
+        <button onClick={() => scrollToId("projects")}>Projects</button>
+        <button onClick={() => scrollToId("work")}>Work</button>
+        <button onClick={() => scrollToId("contact")}>Contact</button>
       </div>
     </div>
   )

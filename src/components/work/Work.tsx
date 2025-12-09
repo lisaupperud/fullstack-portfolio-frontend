@@ -5,7 +5,7 @@ export default function Work() {
   const { value: showWork, toggle } = useToggle()
 
   return (
-    <div className="work-container" id="section-work">
+    <div className="work-container" id="work">
       <div className="timeline-dot">
         <h1 id="title" onClick={toggle}>
           WORK EXPERIENCE
