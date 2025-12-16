@@ -14,7 +14,7 @@ import axios, { type AxiosResponse } from "axios"
 })*/
 
 const apiClient = axios.create({
-  baseURL: "https://portfolio-api-ene9.onrender.com/api/v1",
+  baseURL: "https://fullstack-portfolio-backend-tbnd.onrender.com/api/v1",
   headers: { "Content-Type": "application/json" },
   timeout: 10000,
 })
