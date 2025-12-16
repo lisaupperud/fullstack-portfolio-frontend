@@ -26,7 +26,14 @@
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  position: relative; /* needed for z-index to work */
+  z-index: 30;
   cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.introduction img:hover {
+  transform: scale(1.1);
 }
 
 /*.introduction h1 {
@@ -64,6 +71,11 @@ p {
   font-size: x-large;
   text-decoration: underline;
   cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.introduction-text p:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 1024px) {
