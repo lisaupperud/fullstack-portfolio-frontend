@@ -40,12 +40,12 @@ export default function ProjectList() {
         <p id="copy" className="desktop-only">
           A SELECTION OF THE PROJECTS THAT I AM MOST PROUD OF.
         </p>
-        <p id="short-copy" className="desktop-only">
+        {/*<p id="short-copy" className="desktop-only">
           A showcase of the projects that show a wide range of competence and
           knowledge. Scroll thorugh, read and visit the Repositories to get a
           deeper look into the codebase. Click the tags to sort projects based
           on technology used.
-        </p>
+        </p>*/}
         <div className="mobile-only-wrapper">
           <p className="mobile-only">Swipe to see the projects</p>
         </div>

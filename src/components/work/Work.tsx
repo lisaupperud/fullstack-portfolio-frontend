@@ -18,11 +18,11 @@ export default function Work() {
         <p id="copy" className="desktop-only">
           FROM THE SERVICE INDUSTRY TO SERVING CODE - TAKE A LOOK!
         </p>
-        <p id="short-copy" className="desktop-only">
+        {/*<p id="short-copy" className="desktop-only">
           Take a look at a summary of my previous employments, from the
           restaurant and nightclub industry in Stockholm to my first job as a
           developer.
-        </p>
+        </p>*/}
         <div className="mobile-only-wrapper">
           <p className="mobile-only">
             Click the title & swipe to see my experience

@@ -19,13 +19,11 @@ export default function Contact() {
         <p id="copy" className="desktop-only">
           INTRIGUED? WANT TO KNOW MORE?
         </p>
-        <p id="short-copy" className="desktop-only">
+        {/*<p id="short-copy" className="desktop-only">
           Let's get in contact!
-        </p>
+        </p>*/}
         <div className="mobile-only-wrapper">
-          <p className="mobile-only">
-            Click the title for links to reach out 
-          </p>
+          <p className="mobile-only">Click the title for links to reach out</p>
         </div>
 
         {showContact && (
