@@ -5,11 +5,16 @@ import axios, { type AxiosResponse } from "axios"
        uses Axios to speak to the backend
 */
 
-
 // create instance of Axios with default config
 
-const apiClient = axios.create({
+/*const apiClient = axios.create({
   baseURL: "http://localhost:8080/api/v1", 
+  headers: { "Content-Type": "application/json" },
+  timeout: 10000,
+})*/
+
+const apiClient = axios.create({
+  baseURL: "https://portfolio-api-ene9.onrender.com/api/v1/projects/",
   headers: { "Content-Type": "application/json" },
   timeout: 10000,
 })
