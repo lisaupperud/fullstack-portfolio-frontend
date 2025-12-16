@@ -34,8 +34,14 @@
 .work-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-bottom: 40px;
+  gap: 50px;
+  /*margin-bottom: 40px;*/
+}
+
+.work-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .work-list h2 {
@@ -47,10 +53,16 @@
   flex-direction: column;
   gap: 10px;
   margin-left: 20px;
+  padding: 10px 0;
 }
 
 .mobile-only {
   display: none;
+}
+
+#see-more {
+  padding: 0;
+  margin: 0;
 }
 
 /* MOBILE: Swipeable work experience cards */
