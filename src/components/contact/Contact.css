@@ -35,6 +35,7 @@
   flex-direction: row;
   align-items: center;
   gap: 25px;
+  margin: 20px 0;
 }
 
 .arrow-container {
@@ -71,8 +72,8 @@
 }
 
 #icons {
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
 }
 
 #thanks {
