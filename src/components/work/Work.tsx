@@ -1,5 +1,7 @@
 import "./Work.css"
 import { useToggle } from "../../hooks/useToggle"
+import Click from "../../assets/click.png"
+import CV from "../../assets/cv.pdf"
 
 export default function Work() {
   const { value: showWork, toggle } = useToggle()
@@ -32,9 +34,10 @@ export default function Work() {
         <div className="work-content">
           <div className="work-list">
             <div className="work-card">
-              <h2>JUNIOR SYSTEM DEVELOPER</h2>
-              <h4>SVEA BANK</h4>
-              <h4>JUNE 2025 - AUG 2025</h4>
+              <div className="work-titles">
+                <h2>JUNIOR SYSTEM DEVELOPER</h2>
+                <h4>SVEA BANK | JUNE 2025 - AUG 2025</h4>
+              </div>
               <ul>
                 <li>
                   <strong>API Development: </strong>Built a robust validation
@@ -59,9 +62,11 @@ export default function Work() {
             </div>
 
             <div className="work-card">
-              <h2>BARTENDER & WAITRESS</h2>
-              <h4>RESTAURANT INDUSTRY</h4>
-              <h4>SEP 2018 - PRESENT</h4>
+              <div className="work-titles">
+                <h2>BARTENDER & WAITRESS</h2>
+                <h4>RESTAURANT INDUSTRY | SEP 2018 - PRESENT</h4>
+              </div>
+
               <ul>
                 <li>
                   <strong>Customer Relations: </strong>Provided excellent
@@ -83,6 +88,29 @@ export default function Work() {
                   new staff and sharing best practices.
                 </li>
               </ul>
+            </div>
+
+            <div>
+              <h1 id="see-more" className="desktop-only">
+                WANT A MORE IN-DEPTH LOOK?
+              </h1>
+              <div className="underline-wrapper">
+                <div className="underline" />
+              </div>
+
+              <div className="desktop-only">
+                <p id="finish-text">CHECK OUT MY CV!</p>
+                <div className="github-link-container">
+                  <div className="arrow-line" />
+                  <a href={CV} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={Click}
+                      alt="Website Icon"
+                      className="github-icon"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
