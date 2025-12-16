@@ -54,6 +54,13 @@ h3 {
   margin: 0;
   text-decoration: underline;
   cursor: pointer;
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transform-origin: center;
+}
+
+#title:hover {
+  transform: scale(1.04);
 }
 
 #copy {
