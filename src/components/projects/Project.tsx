@@ -91,7 +91,7 @@ export default function ProjectList() {
             </div>
           ))}
 
-          <h1 id="title" className="desktop-only">
+          <h1 id="see-more" className="desktop-only">
             WANT TO SEE MORE?
           </h1>
           <div className="underline-wrapper">

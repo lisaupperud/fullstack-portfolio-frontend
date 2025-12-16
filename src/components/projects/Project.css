@@ -115,6 +115,15 @@
   display: none;
 }
 
+#see-more {
+  color: black;
+  font-weight: bolder;
+  font-size: 40px;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+}
+
 /* HORIZONTAL SCROLL CONTAINER – ONLY ON MOBILE */
 @media (max-width: 1024px) {
   .project-container {
