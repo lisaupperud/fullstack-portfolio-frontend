@@ -7,7 +7,11 @@ export default function Home() {
   return (
     <div className="home-container">
       <div className="introduction">
-        <img src={lisaupperud} alt="Lisa Upperud smiling to the camera" />
+        <img
+          src={lisaupperud}
+          alt="Lisa Upperud smiling to the camera"
+          onClick={() => scrollToId("projects")}
+        />
         <div className="introduction-text">
           <h1>HI!</h1>
           <h2>I'M LISA</h2>
