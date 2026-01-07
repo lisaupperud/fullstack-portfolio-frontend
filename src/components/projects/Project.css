@@ -186,7 +186,7 @@
     flex-direction: row;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    padding: 40px 5vw;
+    /*padding: 40px 5vw;*/
     gap: 30px;
     scrollbar-width: none;
   }
@@ -243,5 +243,38 @@
     justify-content: center;
     align-items: center;
     flex: 0 0 calc(50% - 10px);
+  }
+
+  .project-list {
+    min-width: calc(
+      100vw - 60px
+    ) !important; /* full width minus safe margins */
+    max-width: calc(100vw - 60px) !important;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    padding: 40px 32px;
+    margin: 0 30px;
+  }
+
+  /* Optional: make text more readable on mobile cards */
+  .project-list h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .project-list p {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .project-link-container {
+    justify-content: center;
+  }
+
+  .link-icon {
+    width: 70px;
+    height: 70px;
   }
 }
