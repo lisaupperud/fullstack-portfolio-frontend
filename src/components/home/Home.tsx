@@ -5,7 +5,7 @@ import { scrollToId } from "../../utils/scroll"
 
 export default function Home() {
   return (
-    <div className="home-container">
+    <div className="home-container" id="home">
       <div className="introduction">
         <img
           src={lisaupperud}
