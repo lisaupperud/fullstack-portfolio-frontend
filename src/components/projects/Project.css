@@ -49,14 +49,49 @@
   font-size: xx-large;
 }
 
-.project-links {
+.project-link-container {
   display: flex;
-  gap: 15px;
+  align-items: center;
+  width: 100%;
+  margin-left: -20px;
 }
 
-.project-links img {
-  width: 90px;
-  height: auto;
+.arrow-line-link {
+  flex-grow: 1;
+  height: 10px;
+  background: #433285;
+  position: relative;
+  /* No margin-left needed anymore */
+}
+
+.arrow-line-link::after {
+  content: "";
+  position: absolute;
+  right: -20px; /* moves arrowhead further right */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid #433285; /* bigger, sharper arrow pointing right */
+}
+
+.project-links {
+  display: flex;
+  gap: 24px;
+  flex-shrink: 0;
+  margin-left: 40px; /* space between arrowhead and icons */
+}
+
+.link-icon {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover .link-icon {
+  transform: scale(1.15);
 }
 
 .tags-container {

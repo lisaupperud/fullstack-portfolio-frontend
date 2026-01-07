@@ -64,29 +64,31 @@ export default function ProjectList() {
                   </span>
                 ))}
               </div>
-              <div className="project-links">
-                {project.link.map((url) => {
-                  const isGitHub = url.includes("github.com")
-
-                  return (
-                    <a
-                      key={url}
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                      title={
-                        isGitHub ? "View source on GitHub" : "Visit live site"
-                      }
-                    >
-                      <img
-                        src={isGitHub ? Git : Click}
-                        alt={isGitHub ? "GitHub" : "Live Demo"}
-                        className="link-icon"
-                      />
-                    </a>
-                  )
-                })}
+              <div className="project-link-container">
+                <div className="arrow-line-link" />
+                <div className="project-links">
+                  {project.link.map((url) => {
+                    const isGitHub = url.includes("github.com")
+                    return (
+                      <a
+                        key={url}
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link"
+                        title={
+                          isGitHub ? "View source on GitHub" : "Visit live site"
+                        }
+                      >
+                        <img
+                          src={isGitHub ? Git : Click}
+                          alt={isGitHub ? "GitHub" : "Live Demo"}
+                          className="link-icon"
+                        />
+                      </a>
+                    )
+                  })}
+                </div>
               </div>
             </div>
           ))}
